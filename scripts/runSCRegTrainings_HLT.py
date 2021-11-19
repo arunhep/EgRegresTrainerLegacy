@@ -48,8 +48,8 @@ def main():
         base_reg_name = "Run3HLT"
         input_ideal_ic  = "{}/HLTAnalyzerTree_IDEAL.root".format(args.input_dir)
         input_real_ic = "{}/HLTAnalyzerTree_REAL.root".format(args.input_dir)
-        ideal_eventnr_cut = "eventnr%2==0"  #4million electrons (we determined 4 million was optimal but after the 2017 was done)
-        real_eventnr_cut = "eventnr%2==1" #4million electrons (we determined 4 million was optimal but after the 2017 was done)
+        ideal_eventnr_cut = "eventnr%4==0"  #4million electrons (we determined 4 million was optimal but after the 2017 was done)
+        real_eventnr_cut = "eventnr%4==1" #4million electrons (we determined 4 million was optimal but after the 2017 was done)
 
     else:
         raise ValueError("era {} is invalid, options are 2016/2017/2018".format(era))
