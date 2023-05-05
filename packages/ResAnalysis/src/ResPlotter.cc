@@ -83,7 +83,6 @@ void ResPlotter::makeHists(std::vector<TTree*> trees,const std::string& label,co
 			   const std::string& vsVar1,const std::string& vsVar2,
 			   const std::vector<double>& vsVar1Bins,const std::vector<double>& vsVar2Bins)
 {
-  
   if(trees.size()!=cfg_.vars.size()){
     LogErr<<" error trees size "<<trees.size()<<" does not equal vars size "<<cfg_.vars.size()<<std::endl;
     return;
